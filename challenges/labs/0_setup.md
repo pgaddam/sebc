@@ -43,5 +43,23 @@ base/7/x86_64                                                                Cen
 extras/7/x86_64                                                              CentOS-7 - Extras                                                                311
 updates/7/x86_64                                                             CentOS-7 - Updates                                                             1,111
 repolist: 10,785
+```
+
+* List the /etc/passwd entries for berkeley and stanford
+
+```
+[root@ip-172-31-4-42 centos]# cat /etc/passwd | grep berkeley
+berkeley:x:2040:2042::/home/berkeley:/bin/bash
+[root@ip-172-31-4-42 centos]# cat /etc/passwd | grep stanford
+stanford:x:2020:2020::/home/stanford:/bin/bash
+```
+
+* List the /etc/group entries for cardinal and bruins. `Centos version did not have /etc/group. So, used getent `
+
+```
+[root@ip-172-31-4-42 centos]# getent group cardinal
+cardinal:x:2042:
+[root@ip-172-31-4-42 centos]# getent group bruins
+bruins:x:2041:
 
 ```
