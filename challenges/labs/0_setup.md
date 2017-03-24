@@ -63,3 +63,6 @@ cardinal:x:2042:
 bruins:x:2041:
 
 ```
+
+* My SQL repo file
+ 	* mysql57-community-release-el7-9.noarch.rpm
